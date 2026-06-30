@@ -16,10 +16,34 @@ The API endpoints were tested using **Postman**.
 
 ## Features
 
-* Create a User data [Username and Password]
-* Retrive User Data
-* Update the User Data
-* Delete a User Data
+* Create API
+* Read API
+* Update API
+* Delete API
+* RESTful API endpoints
+* API testing using Postman
+
+## Database
+
+No database has been integrated in this project. The focus is on implementing CRUD API endpoints using Express.js.  
+
+## Current Implementation
+* Each API returns an appropriate HTTP status code.
+* Responses are displayed in Postman.
+* Success and informational messages are logged using console.log().
+* No persistent data storage is used.
+
+## API Testing
+All CRUD endpoints were tested using Postman.
+
+Example responses:
+
+Create → 201 Created
+Read → 200 OK
+Update → 200 OK
+Delete → 200 OK
+
+The API currently returns status codes and response messages without database integration.
 
 ## Project Structure
 
@@ -34,23 +58,22 @@ project-folder/
 
 ## API Endpoints
 
-| Method | Endpoint           | Description        |
-| ------ | ----------------   | ------------------ |
-| POST   | /createUser-login  | Create a record    |
-| GET    | /getUser           | Get all records    |
-| PUT    | /updateUser-login  | Update a record    |
-| DELETE | /deleteUser-login  | Delete a record    |
+| Method |               Endpoint                 | Description        |
+| ------ |   ----------------------------------   | ------------------ |
+| POST   | http://localhost:3000/createUser-login | Create a record    |
+| GET    | http://localhost:3000/getUser          | Get all records    |
+| PUT    | http://localhost:3000/updateUser-login | Update a record    |
+| DELETE | http://localhost:3000/deleteUser-login | Delete a record    |
 
-## Testing
 
-All API endpoints were tested using **Postman**.
 
 ## Notes
 
 * This project is intended for learning and demonstration purposes.
 * No database is used.
-* Data will not persist after restarting the server.
 
 ## Author
 
 Ajay Vasanth
+
+
